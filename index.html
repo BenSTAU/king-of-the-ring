@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROI DU RING</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section id="title">
+
+      <h1>ROI DU RING</h1>
+    </section>
+    <section id="selection">
+      <input type="text" name="" id="filter" />
+      <div id="select"></div>
+      <div id="btn">
+        <button id="swapOne" class="sodiv playerOne">SWAP PLAYER ONE</button>
+
+        <button id="start" class="sodiv">START</button>
+        <button id="swapTwo" class="sodiv playerTwo">SWAP PLAYER TWO</button>
+      </div>
+      <div>
+        <div class="combattant"></div>
+        <div class="combattant"></div>
+      </div>
+      <div id="versus">
+        <div id="combat"></div>
+        <div class="fighter" id="fighterOne"></div>
+        <div class="fighter" id="fighterTwo"></div>
+      </div>
+    </section>
+
+
+
+    <section id="battle"> 
+      <article class="player">
+          <div class="header">
+            <div class="health">
+              <div id="barredeviep1" class="barredevie"></div>
+            </div>
+            <img id="drapeau1" class="drapeau"></img>
+          </div>
+          <div class="header">
+            <div class="health">
+
+              <div id="barredeviep2" class="barredevie"></div>
+            </div>
+            <img id="drapeau2" class="drapeau"></img>
+          </div>
+      </article>
+      <article id="result">
+        <div id="resultPlayerOne"></div>
+        <div id="resultPlayerTwo"></div>
+      </article>
+    </section>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

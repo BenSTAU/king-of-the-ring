@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+@font-face {
+  font-family: "Jaro";
+  src: url("./font/Jaro-Regular-VariableFont_opsz.ttf");
+}
+body {
+  background-color: #f3e9dc;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#selectionTag {
+  display: block;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+h1 {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #c08552;
+}
+#btn {
+  display: flex;
+  justify-content: space-around;
+}
+#selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 90%;
+}
+.sodiv {
+  width: 500px;
+}
+
+#select {
+  overflow-y: scroll;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#filter {
+  align-self: flex-start;
+  margin-left: 10px;
+}
+button {
+  width: 90px;
+  height: 60px;
+}
+#combat {
+  position: absolute;
+  height: 150%;
+  width: 1px;
+  background-color: black;
+  transform: rotate(5deg);
+}
+#versus {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  border: solid;
+  overflow: hidden;
+  width: 80%;
+}
+
+.fighter {
+  width: 100%;
+  height: 363px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#fighterOneLifeBar {
+  width: 100px;
+  height: 10px;
+  background-color: red;
+}
+
+#battle {
+  margin-top: 50px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.player {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: flex-start;
+  width: 100%;
+}
+.drapeau {
+  width: 90px;
+  height: 60px;
+}
+.header {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+.barredevie {
+  background-color: #c08552;
+  height: 40px;
+}
+
+#barredeviep1 {
+  width: 600px;
+}
+#barredeviep2 {
+  width: 600px;
+}
+
+p {
+  font-size: 40px;
+  font-family: "Orbitron", sans-serif;
+}
+#result {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.health {
+  width: 600px;
+  height: 40px;
+  border: solid;
+}
+#stat {
+  width: 30vw;
+  height: 40px;
+}
