@@ -158,3 +158,21 @@ p {
   width: 30vw;
   height: 40px;
 }
+#winner {
+  position: absolute; /* mieux que absolute pour couvrir tout l'écran */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+#regame {
+  order: 5;
+}

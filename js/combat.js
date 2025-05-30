@@ -17,7 +17,7 @@ const drapeau2 = document.getElementById("drapeau2");
 const result = document.getElementById("result");
 const resultPlayerOne = document.getElementById("resultPlayerOne");
 const resultPlayerTwo = document.getElementById("resultPlayerTwo");
-
+const winner = document.getElementById("winner");
 export default async function combat(country1, country2) {
   if (country1 == null || country2 == null) {
     return;
@@ -79,6 +79,16 @@ export default async function combat(country1, country2) {
     statUsed.push(stat);
 
     await sleep(1000);
+  }
+  if (country1.health > country2.health || country2.health > country1.health) {
+    const img = document.createElement("img");
+    img.src = country1.health > country2.health ? drapeau1.src : drapeau2.src;
+    img.style.width = "90px";
+    img.style.height = "60px";
+    img.style.objectFit = "cover"; // Pour bien remplir la div
+
+    winner.appendChild(img);
+    winner.style.display = "flex";
   }
 }
 function sleep(ms) {
